@@ -7,7 +7,7 @@ add_shortcode('ecp','ecp_replace');
 function ecp_replace($ecp_code){
 	global $wpdb;
 
-		$query = $wpdb->get_results($wpdb->prepare( "SELECT * FROM ".$wpdb->prefix."easycodeplacement WHERE name=%s" ,$ecp_code));
+		$query = $wpdb->get_results($wpdb->prepare( "SELECT * FROM ".$wpdb->prefix."ecp_data WHERE name=%s" ,$ecp_code));
 		
 		if(count($query)>0){
 			

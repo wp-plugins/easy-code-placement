@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,6 +26,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 = Features =  
      
 * Save unlimited Codes on options page
+* Activate and Deactivate the Codes
 * Place a Code with a Shortcode
 * Ready for translations
 
@@ -67,6 +68,10 @@ Not yet
 1. Options-Menu
 
 == Changelog ==
+
+= 1.0 =
+* 28.05.2014
+* FIX: Fixes that the Shortcode don´t work
 
 = 1.0 =
 * 26.05.2014

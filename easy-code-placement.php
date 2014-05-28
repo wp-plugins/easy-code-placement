@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Code Placement - for any Code you want
-Version: 1.0
+Version: 1.1
 Plugin URI: http://www.randnotizen.org/easy-code-placement/
 Author: Jens Herdy
 Author URI: http://www.randnotizen.org/
