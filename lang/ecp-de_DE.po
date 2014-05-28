@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Code Placement - for any Code you want v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-05-25 17:02:40+0000\n"
+"Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: inc/ecp_add.php:22
+#: inc/ecp_edit.php:25
+#: inc/options.php:35
+#@ ecp
+msgid "Options"
+msgstr "Optionen"
+
+#: inc/ecp_add.php:28
+#: inc/ecp_edit.php:31
+#: inc/options.php:40
+#@ ecp
+msgid "Name"
+msgstr "Name"
+
+#: inc/ecp_add.php:29
+#: inc/ecp_edit.php:32
+#@ ecp
+msgid "Code"
+msgstr "Code"
+
+#: inc/ecp_add.php:36
+#: inc/ecp_edit.php:39
+#@ ecp
+msgid "Back"
+msgstr "Zurück"
+
+#: inc/ecp_add.php:36
+#@ ecp
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: inc/ecp_edit.php:39
+#@ ecp
+msgid "Update"
+msgstr "Aktualisieren"
+
+#: inc/options.php:37
+#: inc/options.php:101
+#@ ecp
+msgid "Add New Code"
+msgstr "Neuen Code hinzufügen"
+
+#: inc/options.php:41
+#@ ecp
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/options.php:42
+#@ ecp
+msgid "Status"
+msgstr "Status"
+
+#: inc/options.php:43
+#@ ecp
+msgid "Action"
+msgstr "Aktion"
+
+#: inc/options.php:59
+#@ ecp
+msgid "Inaktiv"
+msgstr "Inaktiv"
+
+#: inc/options.php:59
+#@ ecp
+msgid "Activ"
+msgstr "Aktiv"
+
+#: inc/options.php:66
+#@ ecp
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: inc/options.php:73
+#@ ecp
+msgid "Deactivate"
+msgstr "Deaktivieren"
+
+#: inc/options.php:79
+#@ ecp
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/options.php:80
+#@ ecp
+msgid "Delete"
+msgstr "Löschen"
+
+#: inc/options.php:93
+#@ ecp
+msgid "No Code found - Click \"Add New Code\" to add one."
+msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
+
