@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -66,10 +66,22 @@ Not yet
 == Screenshots ==
 
 1. Options-Menu
+2. Adding new Code
 
 == Changelog ==
 
-= 1.0 =
+= 1.2 =
+* 29.05.2014
+* Name and Code must be filled now
+* Only letters and numbers now for Shortcode names
+* Better documentation of the code
+* Added error messages
+* SECURITY: Secured get and post data
+* Changed Layout for Add and Edit page
+* Set alignment of headings and data
+* Set fixed Table Layout (percenage not px)
+
+= 1.1 =
 * 28.05.2014
 * FIX: Fixes that the Shortcode don´t work
 

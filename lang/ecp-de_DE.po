@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Code Placement - for any Code you want v1.0\n"
+"Project-Id-Version: Easy Code Placement - for any Code you want v1.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-05-25 17:02:40+0000\n"
+"PO-Revision-Date: 2014-05-29 21:23:16+0000\n"
 "Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,95 +20,138 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: inc/ecp_add.php:22
-#: inc/ecp_edit.php:25
-#: inc/options.php:35
+#: inc/ecp_add.php:42
+#: inc/ecp_edit.php:70
+#: inc/error.php:2
+#: inc/options.php:20
 #@ ecp
 msgid "Options"
 msgstr "Optionen"
 
-#: inc/ecp_add.php:28
-#: inc/ecp_edit.php:31
-#: inc/options.php:40
+#: inc/ecp_add.php:48
+#: inc/ecp_edit.php:76
+#: inc/options.php:24
 #@ ecp
 msgid "Name"
 msgstr "Name"
 
-#: inc/ecp_add.php:29
-#: inc/ecp_edit.php:32
+#: inc/ecp_add.php:56
+#: inc/ecp_edit.php:84
 #@ ecp
 msgid "Code"
 msgstr "Code"
 
-#: inc/ecp_add.php:36
-#: inc/ecp_edit.php:39
+#: inc/ecp_add.php:62
+#: inc/ecp_edit.php:90
+#: inc/error.php:13
 #@ ecp
 msgid "Back"
 msgstr "Zurück"
 
-#: inc/ecp_add.php:36
+#: inc/ecp_add.php:62
 #@ ecp
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: inc/ecp_edit.php:39
-#@ ecp
-msgid "Update"
-msgstr "Aktualisieren"
-
-#: inc/options.php:37
-#: inc/options.php:101
+#: inc/options.php:84
 #@ ecp
 msgid "Add New Code"
 msgstr "Neuen Code hinzufügen"
 
-#: inc/options.php:41
+#: inc/options.php:25
 #@ ecp
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: inc/options.php:42
+#: inc/options.php:26
 #@ ecp
 msgid "Status"
 msgstr "Status"
 
-#: inc/options.php:43
+#: inc/options.php:27
 #@ ecp
 msgid "Action"
 msgstr "Aktion"
 
-#: inc/options.php:59
+#: inc/options.php:43
 #@ ecp
 msgid "Inaktiv"
 msgstr "Inaktiv"
 
-#: inc/options.php:59
+#: inc/options.php:43
 #@ ecp
 msgid "Activ"
 msgstr "Aktiv"
 
-#: inc/options.php:66
+#: inc/options.php:50
 #@ ecp
 msgid "Activate"
 msgstr "Aktivieren"
 
-#: inc/options.php:73
+#: inc/options.php:57
 #@ ecp
 msgid "Deactivate"
 msgstr "Deaktivieren"
 
-#: inc/options.php:79
+#: inc/options.php:63
 #@ ecp
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: inc/options.php:80
+#: inc/options.php:64
 #@ ecp
 msgid "Delete"
 msgstr "Löschen"
 
-#: inc/options.php:93
+#: inc/options.php:76
 #@ ecp
 msgid "No Code found - Click \"Add New Code\" to add one."
 msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
+
+#: inc/ecp_add.php:15
+#: inc/ecp_edit.php:28
+#@ ecp
+msgid "Special Characters are not allowed in the Code Name"
+msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
+
+#: inc/ecp_edit.php:90
+#@ ecp
+msgid "Save"
+msgstr "Speichern"
+
+#: inc/error.php:7
+#@ ecp
+msgid "Error"
+msgstr "Fehler"
+
+#: inc/ecp_delete.php:11
+#: inc/ecp_edit.php:19
+#: inc/ecp_edit.php:59
+#: inc/ecp_status.php:12
+#@ ecp
+msgid "Modifying of the ID is not allowed"
+msgstr "Das verändern der ID ist nicht erlaubt"
+
+#: inc/ecp_status.php:19
+#@ ecp
+msgid "Modifying of the Status to something else than 1 or 2 is not allowed"
+msgstr "Das verändern des Status zu etwas anderem als 1 oder 2 ist nicht erlaubt"
+
+#: inc/ecp_add.php:24
+#: inc/ecp_edit.php:37
+#@ ecp
+msgid "The Code Name and / or the Code must be filled in"
+msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
+
+#: inc/ecp_add.php:52
+#: inc/ecp_edit.php:80
+#@ ecp
+msgid "Only Letters and Numbers are allowed."
+msgstr "Nur Buchstaben und Zahlen sind erlaubt."
+
+#: inc/ecp_add.php:53
+#: inc/ecp_edit.php:81
+#@ ecp
+msgid "Instead of Whitesspaces use Underlines."
+msgstr "Anstelle von Leerzeichen benutz Unterstriche."
 
