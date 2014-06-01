@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -70,6 +70,13 @@ Not yet
 
 == Changelog ==
 
+= 1.3 =
+* 01.06.2014
+* A Maximum of 30 Chars is now allowed for name
+* Added an Update routine
+* Updated the German Translation
+* Added Paypal Donate Button
+
 = 1.2 =
 * 29.05.2014
 * Name and Code must be filled now
@@ -83,7 +90,7 @@ Not yet
 
 = 1.1 =
 * 28.05.2014
-* FIX: Fixes that the Shortcode don´t work
+* FIX: Fixes that the Shortcode dont work
 
 = 1.0 =
 * 26.05.2014

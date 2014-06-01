@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Code Placement - for any Code you want v1.1\n"
+"Project-Id-Version: Easy Code Placement - for any Code you want v1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-05-29 21:23:16+0000\n"
+"PO-Revision-Date: 2014-06-01 10:16:06+0000\n"
 "Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,40 +20,40 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: inc/ecp_add.php:42
-#: inc/ecp_edit.php:70
+#: inc/ecp_add.php:51
+#: inc/ecp_edit.php:79
 #: inc/error.php:2
 #: inc/options.php:20
 #@ ecp
 msgid "Options"
 msgstr "Optionen"
 
-#: inc/ecp_add.php:48
-#: inc/ecp_edit.php:76
+#: inc/ecp_add.php:57
+#: inc/ecp_edit.php:85
 #: inc/options.php:24
 #@ ecp
 msgid "Name"
 msgstr "Name"
 
-#: inc/ecp_add.php:56
-#: inc/ecp_edit.php:84
+#: inc/ecp_add.php:66
+#: inc/ecp_edit.php:94
 #@ ecp
 msgid "Code"
 msgstr "Code"
 
-#: inc/ecp_add.php:62
-#: inc/ecp_edit.php:90
+#: inc/ecp_add.php:72
+#: inc/ecp_edit.php:100
 #: inc/error.php:13
 #@ ecp
 msgid "Back"
 msgstr "Zurück"
 
-#: inc/ecp_add.php:62
+#: inc/ecp_add.php:72
 #@ ecp
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: inc/options.php:84
+#: inc/options.php:83
 #@ ecp
 msgid "Add New Code"
 msgstr "Neuen Code hinzufügen"
@@ -73,48 +73,48 @@ msgstr "Status"
 msgid "Action"
 msgstr "Aktion"
 
-#: inc/options.php:43
+#: inc/options.php:42
 #@ ecp
 msgid "Inaktiv"
 msgstr "Inaktiv"
 
-#: inc/options.php:43
+#: inc/options.php:42
 #@ ecp
 msgid "Activ"
 msgstr "Aktiv"
 
-#: inc/options.php:50
+#: inc/options.php:49
 #@ ecp
 msgid "Activate"
 msgstr "Aktivieren"
 
-#: inc/options.php:57
+#: inc/options.php:56
 #@ ecp
 msgid "Deactivate"
 msgstr "Deaktivieren"
 
-#: inc/options.php:63
+#: inc/options.php:62
 #@ ecp
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: inc/options.php:64
+#: inc/options.php:63
 #@ ecp
 msgid "Delete"
 msgstr "Löschen"
 
-#: inc/options.php:76
+#: inc/options.php:75
 #@ ecp
 msgid "No Code found - Click \"Add New Code\" to add one."
 msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
 
-#: inc/ecp_add.php:15
-#: inc/ecp_edit.php:28
+#: inc/ecp_add.php:24
+#: inc/ecp_edit.php:37
 #@ ecp
 msgid "Special Characters are not allowed in the Code Name"
 msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
 
-#: inc/ecp_edit.php:90
+#: inc/ecp_edit.php:100
 #@ ecp
 msgid "Save"
 msgstr "Speichern"
@@ -126,7 +126,7 @@ msgstr "Fehler"
 
 #: inc/ecp_delete.php:11
 #: inc/ecp_edit.php:19
-#: inc/ecp_edit.php:59
+#: inc/ecp_edit.php:68
 #: inc/ecp_status.php:12
 #@ ecp
 msgid "Modifying of the ID is not allowed"
@@ -137,21 +137,34 @@ msgstr "Das verändern der ID ist nicht erlaubt"
 msgid "Modifying of the Status to something else than 1 or 2 is not allowed"
 msgstr "Das verändern des Status zu etwas anderem als 1 oder 2 ist nicht erlaubt"
 
-#: inc/ecp_add.php:24
-#: inc/ecp_edit.php:37
+#: inc/ecp_add.php:33
+#: inc/ecp_edit.php:46
 #@ ecp
 msgid "The Code Name and / or the Code must be filled in"
 msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
 
-#: inc/ecp_add.php:52
-#: inc/ecp_edit.php:80
+#: inc/ecp_add.php:15
+#: inc/ecp_add.php:63
+#: inc/ecp_edit.php:28
+#: inc/ecp_edit.php:91
 #@ ecp
-msgid "Only Letters and Numbers are allowed."
-msgstr "Nur Buchstaben und Zahlen sind erlaubt."
+msgid "A maximum of 30 Characters is allowed"
+msgstr "Maximal 30 Zeichen sind erlaubt"
 
-#: inc/ecp_add.php:53
-#: inc/ecp_edit.php:81
+#: inc/ecp_add.php:61
+#: inc/ecp_edit.php:89
 #@ ecp
-msgid "Instead of Whitesspaces use Underlines."
-msgstr "Anstelle von Leerzeichen benutz Unterstriche."
+msgid "Only Letters and Numbers are allowed"
+msgstr "Nur Buchstaben und Zahlen sind erlaubt"
+
+#: inc/ecp_add.php:62
+#: inc/ecp_edit.php:90
+#@ ecp
+msgid "Instead of Whitesspaces use Underlines"
+msgstr "Anstelle von Leerzeichen sind Unterstriche zu benutzen"
+
+#: inc/options.php:86
+#@ ecp
+msgid "If you want to thank the developer for this free Plugin, you are welcome to make a donation via PayPal (you don't need a PayPal account to make the donation)."
+msgstr "Wenn du dem Entwickler für dieses kostenlose Plugin danken möchtest, kannst du gerne bei PayPal eine Spende hinterlassen (es wird kein PayPal Account benötigt)."
 

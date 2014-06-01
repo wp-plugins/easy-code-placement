@@ -5,37 +5,46 @@ global $wpdb;
 // when form was sent
 if(isset($_POST) && isset($_POST['submit'])) {
 
-// secure post data and set variables
-$_POST = stripslashes_deep ($_POST);
-$t_ecp_name = $_POST['name'];
-$t_ecp_code = $_POST['code'];
+    // secure post data and set variables
+    $_POST = stripslashes_deep ($_POST);
+    $t_ecp_name = $_POST['name'];
+    $t_ecp_code = $_POST['code'];
 
-if (preg_match("/[^a-zA-Z0-9\_-]/i", $t_ecp_name)) {
-  // when name contains spechial chars
-  $ecp_error = __('Special Characters are not allowed in the Code Name', 'ecp');
-  $ecp_error_page = "&load=ecpadd";
-  $ecp_error_id = "";
-  ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-  exit();
-}
+    if (strlen($t_ecp_name) > 30) {
+        // when name is longer than 30 chars
+        $ecp_error = __('A maximum of 30 Characters is allowed', 'ecp');
+        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_id = "";
+        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
+        exit();  
+    }
 
-if ($t_ecp_name =="" || $t_ecp_code =="") {
-  // when post emty goto error page
+    if (preg_match("/[^a-zA-Z0-9\_-]/i", $t_ecp_name)) {
+        // when name contains spechial chars
+        $ecp_error = __('Special Characters are not allowed in the Code Name', 'ecp');
+        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_id = "";
+        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
+        exit();
+    }
+
+    if ($t_ecp_name =="" || $t_ecp_code =="") {
+        // when post emty goto error page
 	$ecp_error = __('The Code Name and / or the Code must be filled in', 'ecp');
-  $ecp_error_page = "&load=ecpadd";
-  $ecp_error_id = "";
-  ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-  exit();
-}
+        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_id = "";
+        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
+        exit();
+    }
 
-$wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'shortcode'=>$t_ecp_name,'status'=>'1'));
+    $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'shortcode'=>$t_ecp_name,'status'=>'1'));
 
-// when added to database goto options page
-header('Location: options-general.php?page=ecp_option_page');
-exit();
+    // when added to database goto options page
+    header('Location: options-general.php?page=ecp_option_page');
+    exit();
 
 } else {
-  // when nothing done
+    // when nothing done
 ?>
 
 <div class="wrap">
@@ -44,20 +53,21 @@ exit();
 
 <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
 <table width="100%" border="0" cellspacing="0" cellpadding="6">    
-	<tr>
-  <td><?php _e('Name','ecp'); ?></td>
-  </tr>
-  <tr>
-  <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center">
-  <br>- <?php _e('Only Letters and Numbers are allowed.','ecp'); ?>
-  <br>- <?php _e('Instead of Whitesspaces use Underlines.','ecp'); ?></td>
-  </tr>
-	<tr>
-  <td><?php _e('Code','ecp'); ?></td>
-  </tr>
-  <tr>
-  <td><textarea style="width: 600px; height: 150px;" name="code"></textarea></td>
-  </tr>  
+    <tr>
+    <td><?php _e('Name','ecp'); ?></td>
+    </tr>
+    <tr>
+    <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center">
+    <br>- <?php _e('Only Letters and Numbers are allowed','ecp'); ?>.
+    <br>- <?php _e('Instead of Whitesspaces use Underlines','ecp'); ?>.
+    <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>
+    </tr>
+    <tr>
+    <td><?php _e('Code','ecp'); ?></td>
+    </tr>
+    <tr>
+    <td><textarea style="width: 600px; height: 150px;" name="code"></textarea></td>
+    </tr>  
 </table>
 <input type="button" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'> - <input type="submit" name="submit" value="<?php _e('Add','ecp'); ?>">
 </form>
