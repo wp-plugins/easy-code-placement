@@ -31,8 +31,10 @@ function ecp_install(){
         `id` int NOT NULL AUTO_INCREMENT,
         `name` varchar(35) COLLATE utf8_unicode_ci NOT NULL,
         `code` longtext COLLATE utf8_unicode_ci NOT NULL,
+        `alignment` varchar(35) COLLATE utf8_unicode_ci NOT NULL,
         `shortcode` varchar(55) COLLATE utf8_unicode_ci NOT NULL,
         `status` int NOT NULL,
+        `version` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1";
     $wpdb->query($ecp_table);
@@ -45,8 +47,8 @@ function ecp_install(){
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1";
     $wpdb->query($ecp_version);
         
-    // insert version into table
-        $wpdb->insert($wpdb->prefix.'ecp_version', array('version' => ECP_VERSION));
+    // insert data
+    $wpdb->insert($wpdb->prefix.'ecp_version', array('version' => ECP_VERSION));
 }
 
 // tell wordpress that there is an installation routine

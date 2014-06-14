@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,10 +12,11 @@ A great Wordpress plugin to place any Code - anywhere you want.
 
 == Description ==
 
-Easy Code Placement provides a very easy way to place any Code where you want to have them.
+Easy Code Placement provides a very easy way to place any Code where you want to have them. - You can use the WordPress Text Widget with an Shortcode in it, only a Shortcode anywhere in Posts/Pages or PHP-Snippets to place your code where you want.
 
 = Which Codes? =  
-     
+
+* PHP 
 * HTML
 * CSS
 * AdSense or other Ads
@@ -27,8 +28,12 @@ Easy Code Placement provides a very easy way to place any Code where you want to
      
 * Save unlimited Codes on options page
 * Activate and Deactivate the Codes
+* Standard WP Text Widget Modified for usage with PHP
 * Place a Code with a Shortcode
+* Place a Code with a PHP-Snippet
+* Place a Code with the WordPress Text-Widget
 * Ready for translations
+* Clean uninstall - No data left
 
 = Languages =
 
@@ -69,6 +74,13 @@ Not yet
 2. Adding new Code
 
 == Changelog ==
+
+= 1.4 =
+* 14.06.2014
+* Added Buttons instead of Text-Links
+* Modified the WP Text Widget to work with PHP Code
+* Added the Option to set the Alignment of the Code
+* The Uninstall is Clean now - No Trah left!
 
 = 1.3 =
 * 01.06.2014

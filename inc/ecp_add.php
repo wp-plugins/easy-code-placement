@@ -9,6 +9,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     $_POST = stripslashes_deep ($_POST);
     $t_ecp_name = $_POST['name'];
     $t_ecp_code = $_POST['code'];
+    $t_ecp_alignment = $_POST['alignment'];
 
     if (strlen($t_ecp_name) > 30) {
         // when name is longer than 30 chars
@@ -37,7 +38,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         exit();
     }
 
-    $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'shortcode'=>$t_ecp_name,'status'=>'1'));
+    $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>'1'));
 
     // when added to database goto options page
     header('Location: options-general.php?page=ecp_option_page');
@@ -54,20 +55,31 @@ if(isset($_POST) && isset($_POST['submit'])) {
 <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
 <table width="100%" border="0" cellspacing="0" cellpadding="6">    
     <tr>
-    <td><?php _e('Name','ecp'); ?></td>
+        <td><?php _e('Name','ecp'); ?></td>
     </tr>
     <tr>
-    <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center">
-    <br>- <?php _e('Only Letters and Numbers are allowed','ecp'); ?>.
-    <br>- <?php _e('Instead of Whitesspaces use Underlines','ecp'); ?>.
-    <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>
+        <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center">
+        <br>- <?php _e('Only Letters and Numbers are allowed','ecp'); ?>.
+        <br>- <?php _e('Instead of Whitesspaces use Underlines','ecp'); ?>.
+        <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>
     </tr>
     <tr>
-    <td><?php _e('Code','ecp'); ?></td>
+        <td><?php _e('Code','ecp'); ?></td>
     </tr>
     <tr>
-    <td><textarea style="width: 600px; height: 150px;" name="code"></textarea></td>
-    </tr>  
+        <td><textarea style="width: 600px; height: 150px;" name="code"></textarea></td>
+    </tr>
+    <tr>
+        <td><?php _e('Alignment','ecp'); ?></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio" name="alignment" value="0" checked><?php _e('None','ecp'); ?>
+            <input type="radio" name="alignment" value="1"><?php _e('Left','ecp'); ?>
+            <input type="radio" name="alignment" value="2"><?php _e('Center','ecp'); ?>
+            <input type="radio" name="alignment" value="3"><?php _e('Right','ecp'); ?>
+        </td>
+    </tr>
 </table>
 <input type="button" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'> - <input type="submit" name="submit" value="<?php _e('Add','ecp'); ?>">
 </form>
