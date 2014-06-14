@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Code Placement - for any Code you want v1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-06-14 21:44:08+0000\n"
+"Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: inc/ecp_add.php:52
+#: inc/ecp_edit.php:80
+#: inc/error.php:2
+#: inc/options.php:20
+#@ ecp
+msgid "Options"
+msgstr "Optionen"
+
+#: inc/ecp_add.php:58
+#: inc/ecp_edit.php:86
+#: inc/options.php:24
+#@ ecp
+msgid "Name"
+msgstr "Name"
+
+#: inc/ecp_add.php:67
+#: inc/ecp_edit.php:95
+#@ ecp
+msgid "Code"
+msgstr "Code"
+
+#: inc/ecp_add.php:84
+#: inc/ecp_edit.php:112
+#: inc/error.php:13
+#@ ecp
+msgid "Back"
+msgstr "Zurück"
+
+#: inc/ecp_add.php:84
+#@ ecp
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: inc/options.php:101
+#@ ecp
+msgid "Add New Code"
+msgstr "Neuen Code hinzufügen"
+
+#: inc/options.php:25
+#@ ecp
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: inc/options.php:26
+#@ ecp
+msgid "Action"
+msgstr "Aktion"
+
+#: inc/options.php:65
+#@ ecp
+msgid "Inaktiv"
+msgstr "Inaktiv"
+
+#: inc/options.php:48
+#@ ecp
+msgid "Activ"
+msgstr "Aktiv"
+
+#: inc/options.php:80
+#@ ecp
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/options.php:81
+#@ ecp
+msgid "Delete"
+msgstr "Löschen"
+
+#: inc/options.php:93
+#@ ecp
+msgid "No Code found - Click \"Add New Code\" to add one."
+msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
+
+#: inc/ecp_add.php:25
+#: inc/ecp_edit.php:38
+#@ ecp
+msgid "Special Characters are not allowed in the Code Name"
+msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
+
+#: inc/ecp_edit.php:112
+#@ ecp
+msgid "Save"
+msgstr "Speichern"
+
+#: inc/error.php:7
+#@ ecp
+msgid "Error"
+msgstr "Fehler"
+
+#: inc/ecp_delete.php:11
+#: inc/ecp_edit.php:20
+#: inc/ecp_edit.php:69
+#: inc/ecp_status.php:12
+#@ ecp
+msgid "Modifying of the ID is not allowed"
+msgstr "Das verändern der ID ist nicht erlaubt"
+
+#: inc/ecp_status.php:19
+#@ ecp
+msgid "Modifying of the Status to something else than 1 or 2 is not allowed"
+msgstr "Das verändern des Status zu etwas anderem als 1 oder 2 ist nicht erlaubt"
+
+#: inc/ecp_add.php:34
+#: inc/ecp_edit.php:47
+#@ ecp
+msgid "The Code Name and / or the Code must be filled in"
+msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
+
+#: inc/ecp_add.php:16
+#: inc/ecp_add.php:64
+#: inc/ecp_edit.php:29
+#: inc/ecp_edit.php:92
+#@ ecp
+msgid "A maximum of 30 Characters is allowed"
+msgstr "Maximal 30 Zeichen sind erlaubt"
+
+#: inc/ecp_add.php:62
+#: inc/ecp_edit.php:90
+#@ ecp
+msgid "Only Letters and Numbers are allowed"
+msgstr "Nur Buchstaben und Zahlen sind erlaubt"
+
+#: inc/ecp_add.php:63
+#: inc/ecp_edit.php:91
+#@ ecp
+msgid "Instead of Whitesspaces use Underlines"
+msgstr "Anstelle von Leerzeichen sind Unterstriche zu benutzen"
+
+#: inc/options.php:104
+#@ ecp
+msgid "If you want to thank the developer for this free Plugin, you are welcome to make a donation via PayPal (you don't need a PayPal account to make the donation)."
+msgstr "Wenn du dem Entwickler für dieses kostenlose Plugin danken möchtest, kannst du gerne bei PayPal eine Spende hinterlassen (es wird kein PayPal Account benötigt)."
+
+#: inc/ecp_add.php:73
+#: inc/ecp_edit.php:101
+#@ ecp
+msgid "Alignment"
+msgstr "Ausrichtung"
+
+#: inc/ecp_add.php:77
+#: inc/ecp_edit.php:105
+#: inc/options.php:50
+#: inc/options.php:67
+#@ ecp
+msgid "None"
+msgstr "Keine"
+
+#: inc/ecp_add.php:78
+#: inc/ecp_edit.php:106
+#: inc/options.php:52
+#: inc/options.php:69
+#@ ecp
+msgid "Left"
+msgstr "Links"
+
+#: inc/ecp_add.php:79
+#: inc/ecp_edit.php:107
+#: inc/options.php:54
+#: inc/options.php:71
+#@ ecp
+msgid "Center"
+msgstr "Zentriert"
+
+#: inc/ecp_add.php:80
+#: inc/ecp_edit.php:108
+#: inc/options.php:56
+#: inc/options.php:73
+#@ ecp
+msgid "Right"
+msgstr "Rechts"
+
+#: inc/options.php:48
+#@ ecp
+msgid "Status is Activ - Click to change"
+msgstr "Status ist Aktiv - Klicke um dies zu ändern"
+
+#: inc/options.php:50
+#: inc/options.php:67
+#@ ecp
+msgid "No Alignment - Change it under Edit"
+msgstr "Keine Ausrichtung - Ändere dies unter Bearbeiten"
+
+#: inc/options.php:52
+#: inc/options.php:69
+#@ ecp
+msgid "Left Alignment - Change it under Edit"
+msgstr "Linke Ausrichtung - Ändere dies unter Bearbeiten"
+
+#: inc/options.php:54
+#: inc/options.php:71
+#@ ecp
+msgid "Center Alignment - Change it under Edit"
+msgstr "Zentrierte Ausrichtung - Ändere dies unter Bearbeiten"
+
+#: inc/options.php:56
+#: inc/options.php:73
+#@ ecp
+msgid "Right Alignment - Change it under Edit"
+msgstr "Rechte Ausrichtung - Ändere dies unter Bearbeiten"
+
+#: inc/options.php:65
+#@ ecp
+msgid "Status is Deactive - Click to change"
+msgstr "Status ist Deaktiv - Klicke um dies zu ändern"
+
