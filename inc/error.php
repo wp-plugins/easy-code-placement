@@ -10,6 +10,6 @@
         <td><?php echo $ecp_error; ?>!</td>
     </tr>
 </table>
-<br><input type="button" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url("options-general.php?page=ecp_option_page$ecp_error_page$ecp_error_id");?>"'>
+<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url("options-general.php?page=ecp_option_page$ecp_error_page$ecp_error_id");?>"'>
 
 </div>

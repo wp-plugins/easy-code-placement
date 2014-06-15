@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -71,9 +71,20 @@ Not yet
 == Screenshots ==
 
 1. Options-Menu
-2. Adding new Code
+2. Add new Code
+3. Edit existing Code
+4. Widget with Shortcode
 
 == Changelog ==
+
+= 1.5 =
+* 15.06.2014
+* Added Screenshot from Widget with Shortcode in it
+* Added Screenshot from Edit Page
+* Changed existing Screenshots
+* Alignment can now be changed on Options Page
+* Changed Layout of Buttons to WP default
+* New and better Buttons (Action)
 
 = 1.4 =
 * 14.06.2014

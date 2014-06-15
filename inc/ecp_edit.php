@@ -10,6 +10,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     $t_ecp_name = $_POST['name'];
     $t_ecp_code = $_POST['code'];
     $t_ecp_alignment = $_POST['alignment'];
+    $t_ecp_status = $_POST['status'];
 
     // secure get data and set variables
     $_GET = stripslashes_deep ($_GET);
@@ -51,7 +52,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         exit();
     }
 
-    $wpdb->update($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>'1'), array('id'=>$ecp_id));
+    $wpdb->update($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status), array('id'=>$ecp_id));
 
     // when edited goto options page
     header('Location: options-general.php?page=ecp_option_page');
@@ -81,9 +82,9 @@ if(isset($_POST) && isset($_POST['submit'])) {
 <br>
 
 <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
-<table width="100%" border="0" cellspacing="0" cellpadding="6">    
+<table width="100%" border="0" cellspacing="0" cellpadding="3">    
     <tr>
-        <td><?php _e('Name','ecp'); ?></td>
+        <td><?php _e('Name','ecp'); ?>:</td>
     </tr>
     <tr>
         <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center" value="<?php echo ($ecp_load->name); ?>">
@@ -92,13 +93,13 @@ if(isset($_POST) && isset($_POST['submit'])) {
         <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>
     </tr>
     <tr>
-        <td><?php _e('Code','ecp'); ?></td>
+        <td><?php _e('Code','ecp'); ?>:</td>
     </tr>
     <tr>
         <td><textarea style="width: 600px; height: 150px;" name="code"><?php echo ($ecp_load->code); ?></textarea></td>
     </tr>
     <tr>
-        <td><?php _e('Alignment','ecp'); ?></td>
+        <td><?php _e('Alignment','ecp'); ?>:</td>
     </tr>
     <tr>
         <td>
@@ -108,8 +109,17 @@ if(isset($_POST) && isset($_POST['submit'])) {
             <input type="radio" name="alignment" value="3" <?php if ($ecp_load->alignment == "3") {echo "checked";} else {echo "";}; ?>><?php _e('Right','ecp'); ?>
         </td>
     </tr>
+    <tr>
+        <td><?php _e('Status','ecp'); ?>:</td>
+    </tr>
+    <tr>
+        <td>
+            <input type="radio" name="status" value="1" <?php if ($ecp_load->status == "1") {echo "checked";} else {echo "";}; ?>><?php _e('Online','ecp'); ?>
+            <input type="radio" name="status" value="2" <?php if ($ecp_load->status == "2") {echo "checked";} else {echo "";}; ?>><?php _e('Offline','ecp'); ?>
+        </td>
+    </tr>
 </table>
-<input type="button" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'> - <input type="submit" name="submit" value="<?php _e('Save','ecp'); ?>">
+<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'>&nbsp;&nbsp;<input type="submit" name="submit" class="button-primary" value="<?php _e('Save','ecp'); ?>">
 </form>
 
 </div>
