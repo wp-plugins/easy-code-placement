@@ -79,7 +79,7 @@ Not yet
 == Changelog ==
 
 = 1.6 =
-* ??.??.2014
+* 21.06.2014
 * Updated German translation
 * BUG: Added missing Information in Data Table
 * Added check for existing name with error if found
