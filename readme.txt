@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
-Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript
+Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ A great Wordpress plugin to place any Code - anywhere you want.
 
 == Description ==
 
-Easy Code Placement provides a very easy way to place any Code where you want to have them. - You can use the WordPress Text Widget with an Shortcode in it, only a Shortcode anywhere in Posts/Pages or PHP-Snippets to place your code where you want.
+Easy Code Placement provides a very easy way to place any Code where you want to have it. - You can use the WordPress Text Widget with an Shortcode in it, only a Shortcode anywhere in Posts/Pages or PHP-Snippets to place your code where you want.
 
 = Which Codes? =  
 
@@ -23,6 +23,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 * Flash
 * Video & Audio
 * Javascript
+* Everything you want
 
 = Features =  
      
@@ -44,18 +45,18 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 
 = In WordPress =
 
-* Download the Plugin
 * Go in your Dashboard to 'Plugins' -> 'Install'
-* Click on Upload
-* Click on 'Choose file' and choose the downloaded Zip-file
+* Search for 'Easy Code Placement'
 * Click on 'Install'
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Now you can go to the Settings-Page on 'Settings' -> 'Easy Code Placement'
 
 = Manually =
 
+* Download the Plugin
 * Go in your Dashboard to 'Plugins' -> 'Install'
-* Search for 'Easy Code Placement'
+* Click on Upload
+* Click on 'Choose file' and choose the downloaded Zip-file
 * Click on 'Install'
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Now you can go to the Settings-Page on 'Settings' -> 'Easy Code Placement'
@@ -76,6 +77,13 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 1.6 =
+* ??.??.2014
+* Updated German translation
+* BUG: Added missing Information in Data Table
+* Added check for existing name with error if found
+* Code optimization
 
 = 1.5 =
 * 15.06.2014

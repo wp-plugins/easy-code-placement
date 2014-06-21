@@ -5,6 +5,16 @@ global $wpdb;
 // set variable for version comparsion
 $t_ecp_version = $wpdb->get_var( "SELECT version FROM ".$wpdb->prefix."ecp_version WHERE ID=1" );
 
+
+// if version after update = 1.6
+if( $t_ecp_version == "1.5" &&  ECP_VERSION == "1.6") {
+    
+    // update version
+    $wpdb->update($wpdb->prefix.'ecp_data', array('version'=>'1.6'), array( 'version'=>'1.5' ));
+    $wpdb->update($wpdb->prefix.'ecp_data', array('version'=>'1.6'), array( 'version'=>'' ));
+    $wpdb->update($wpdb->prefix.'ecp_version', array('version'=>'1.6'), array( 'ID'=>'1' ));
+}
+
 // if version after update = 1.5
 if( $t_ecp_version == "1.4" &&  ECP_VERSION == "1.5") {
     

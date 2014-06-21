@@ -38,8 +38,18 @@ if(isset($_POST) && isset($_POST['submit'])) {
         ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
         exit();
     }
+    
+    $ecp_count = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."ecp_data WHERE name = '$t_ecp_name'");
+    if ($wpdb->num_rows) {
+        // when name in database goto error page
+	$ecp_error = __('The Code Name already exist - It must be uniqe', 'ecp');
+        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_id = "";
+        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
+        exit();
+    }
 
-    $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status));
+    $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status,'version'=>ECP_VERSION));
 
     // when added to database goto options page
     header('Location: options-general.php?page=ecp_option_page');

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Easy Code Placement - for any Code you want v1.4\n"
+"Project-Id-Version: Easy Code Placement - for any Code you want v1.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-06-15 08:18:04+0000\n"
+"PO-Revision-Date: 2014-06-21 08:27:46+0000\n"
 "Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,65 +20,65 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: inc/ecp_add.php:53
-#: inc/ecp_edit.php:81
+#: inc/ecp_add.php:63
+#: inc/ecp_edit.php:91
 #: inc/error.php:2
-#: inc/options.php:23
+#: inc/options.php:24
 #@ ecp
 msgid "Options"
 msgstr "Optionen"
 
-#: inc/ecp_add.php:59
-#: inc/ecp_edit.php:87
-#: inc/options.php:27
+#: inc/ecp_add.php:69
+#: inc/ecp_edit.php:97
+#: inc/options.php:28
 #@ ecp
 msgid "Name"
 msgstr "Name"
 
-#: inc/ecp_add.php:68
-#: inc/ecp_edit.php:96
+#: inc/ecp_add.php:78
+#: inc/ecp_edit.php:106
 #@ ecp
 msgid "Code"
 msgstr "Code"
 
-#: inc/ecp_add.php:94
-#: inc/ecp_edit.php:122
+#: inc/ecp_add.php:104
+#: inc/ecp_edit.php:132
 #: inc/error.php:13
 #@ ecp
 msgid "Back"
 msgstr "Zurück"
 
-#: inc/ecp_add.php:94
+#: inc/ecp_add.php:104
 #@ ecp
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: inc/options.php:104
+#: inc/options.php:94
 #@ ecp
 msgid "Add New Code"
 msgstr "Neuen Code hinzufügen"
 
-#: inc/options.php:28
+#: inc/options.php:29
 #@ ecp
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: inc/options.php:29
+#: inc/options.php:30
 #@ ecp
 msgid "Action"
 msgstr "Aktion"
 
-#: inc/options.php:83
+#: inc/options.php:73
 #@ ecp
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: inc/options.php:84
+#: inc/options.php:74
 #@ ecp
 msgid "Delete"
 msgstr "Löschen"
 
-#: inc/options.php:96
+#: inc/options.php:86
 #@ ecp
 msgid "No Code found - Click \"Add New Code\" to add one."
 msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
@@ -89,7 +89,7 @@ msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzu
 msgid "Special Characters are not allowed in the Code Name"
 msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
 
-#: inc/ecp_edit.php:122
+#: inc/ecp_edit.php:132
 #@ ecp
 msgid "Save"
 msgstr "Speichern"
@@ -102,7 +102,7 @@ msgstr "Fehler"
 #: inc/ecp_alignment.php:12
 #: inc/ecp_delete.php:11
 #: inc/ecp_edit.php:21
-#: inc/ecp_edit.php:70
+#: inc/ecp_edit.php:80
 #: inc/ecp_status.php:12
 #@ ecp
 msgid "Modifying of the ID is not allowed"
@@ -120,94 +120,90 @@ msgid "The Code Name and / or the Code must be filled in"
 msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
 
 #: inc/ecp_add.php:17
-#: inc/ecp_add.php:65
+#: inc/ecp_add.php:75
 #: inc/ecp_edit.php:30
-#: inc/ecp_edit.php:93
+#: inc/ecp_edit.php:103
 #@ ecp
 msgid "A maximum of 30 Characters is allowed"
 msgstr "Maximal 30 Zeichen sind erlaubt"
 
-#: inc/ecp_add.php:63
-#: inc/ecp_edit.php:91
+#: inc/ecp_add.php:73
+#: inc/ecp_edit.php:101
 #@ ecp
 msgid "Only Letters and Numbers are allowed"
 msgstr "Nur Buchstaben und Zahlen sind erlaubt"
 
-#: inc/ecp_add.php:64
-#: inc/ecp_edit.php:92
+#: inc/ecp_add.php:74
+#: inc/ecp_edit.php:102
 #@ ecp
 msgid "Instead of Whitesspaces use Underlines"
 msgstr "Anstelle von Leerzeichen sind Unterstriche zu benutzen"
 
-#: inc/options.php:107
+#: inc/options.php:97
 #@ ecp
 msgid "If you want to thank the developer for this free Plugin, you are welcome to make a donation via PayPal (you don't need a PayPal account to make the donation)."
 msgstr "Wenn du dem Entwickler für dieses kostenlose Plugin danken möchtest, kannst du gerne bei PayPal eine Spende hinterlassen (es wird kein PayPal Account benötigt)."
 
-#: inc/ecp_add.php:74
-#: inc/ecp_edit.php:102
+#: inc/ecp_add.php:84
+#: inc/ecp_edit.php:112
 #@ ecp
 msgid "Alignment"
 msgstr "Ausrichtung"
 
-#: inc/ecp_add.php:78
-#: inc/ecp_edit.php:106
-#: inc/options.php:53
-#: inc/options.php:70
+#: inc/ecp_add.php:88
+#: inc/ecp_edit.php:116
+#: inc/options.php:65
 #@ ecp
 msgid "None"
 msgstr "Keine"
 
-#: inc/ecp_add.php:79
-#: inc/ecp_edit.php:107
-#: inc/options.php:55
-#: inc/options.php:72
+#: inc/ecp_add.php:89
+#: inc/ecp_edit.php:117
+#: inc/options.php:67
 #@ ecp
 msgid "Left"
 msgstr "Links"
 
-#: inc/ecp_add.php:80
-#: inc/ecp_edit.php:108
-#: inc/options.php:57
-#: inc/options.php:74
+#: inc/ecp_add.php:90
+#: inc/ecp_edit.php:118
+#: inc/options.php:69
 #@ ecp
 msgid "Center"
 msgstr "Zentriert"
 
-#: inc/ecp_add.php:81
-#: inc/ecp_edit.php:109
-#: inc/options.php:59
-#: inc/options.php:76
+#: inc/ecp_add.php:91
+#: inc/ecp_edit.php:119
+#: inc/options.php:71
 #@ ecp
 msgid "Right"
 msgstr "Rechts"
 
-#: inc/ecp_add.php:85
-#: inc/ecp_edit.php:113
+#: inc/ecp_add.php:95
+#: inc/ecp_edit.php:123
 #@ ecp
 msgid "Status"
 msgstr "Status"
 
-#: inc/ecp_add.php:89
-#: inc/ecp_edit.php:117
-#: inc/options.php:51
+#: inc/ecp_add.php:99
+#: inc/ecp_edit.php:127
+#: inc/options.php:52
 #@ ecp
 msgid "Online"
 msgstr "Online"
 
-#: inc/ecp_add.php:90
-#: inc/ecp_edit.php:118
-#: inc/options.php:68
+#: inc/ecp_add.php:100
+#: inc/ecp_edit.php:128
+#: inc/options.php:59
 #@ ecp
 msgid "Offline"
 msgstr "Offline"
 
-#: inc/options.php:51
+#: inc/options.php:52
 #@ ecp
 msgid "Status is Online - Click to change"
 msgstr "Status ist Online - Klicke um dies zu ändern"
 
-#: inc/options.php:68
+#: inc/options.php:59
 #@ ecp
 msgid "Status is Offline - Click to change"
 msgstr "Status ist Offline - Klicke um dies zu ändern"
@@ -217,27 +213,29 @@ msgstr "Status ist Offline - Klicke um dies zu ändern"
 msgid "Modifying the Alignment to something else than 0, 1, 2 or 3 is not allowed"
 msgstr "Das verändern der Ausrichtung zu etwas anderem als 0, 1, 2 oder 3 ist nicht erlaubt"
 
-#: inc/options.php:53
-#: inc/options.php:70
+#: inc/options.php:65
 #@ ecp
 msgid "No Alignment - Click to change"
 msgstr "Keine Ausrichtung - Klicke um dies zu ändern"
 
-#: inc/options.php:55
-#: inc/options.php:72
+#: inc/options.php:67
 #@ ecp
 msgid "Left Alignment - Click to change"
 msgstr "Linke Ausrichtung - Klicke um dies zu ändern"
 
-#: inc/options.php:57
-#: inc/options.php:74
+#: inc/options.php:69
 #@ ecp
 msgid "Center Alignment - Click to change"
 msgstr "Zentrierte Ausrichtung - Klicke um dies zu ändern"
 
-#: inc/options.php:59
-#: inc/options.php:76
+#: inc/options.php:71
 #@ ecp
 msgid "Right Alignment - Click to change"
 msgstr "Rechte Ausrichtung - Klicke um dies zu ändern"
+
+#: inc/ecp_add.php:45
+#: inc/ecp_edit.php:58
+#@ ecp
+msgid "The Code Name already exist - It must be uniqe"
+msgstr "Der Name existiert bereits - Er muss einmalig sein"
 

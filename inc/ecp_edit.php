@@ -52,6 +52,16 @@ if(isset($_POST) && isset($_POST['submit'])) {
         exit();
     }
 
+    $ecp_count = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."ecp_data WHERE name = '$t_ecp_name'");
+    if ($wpdb->num_rows) {
+        // when name in database goto error page
+	$ecp_error = __('The Code Name already exist - It must be uniqe', 'ecp');
+        $ecp_error_page = "&load=ecpedit";
+        $ecp_error_id = "&ecpid=$ecp_id";
+        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
+        exit();
+    }
+    
     $wpdb->update($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status), array('id'=>$ecp_id));
 
     // when edited goto options page
