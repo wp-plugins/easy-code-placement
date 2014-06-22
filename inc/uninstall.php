@@ -27,7 +27,7 @@ function ecp_uninstall(){
 
     // delete tables
     $wpdb->query("DROP TABLE ".$wpdb->prefix."ecp_data");
-    $wpdb->query("DROP TABLE ".$wpdb->prefix."ecp_version");
+    $wpdb->query("DROP TABLE ".$wpdb->prefix."ecp_options");
 }
 
 // tell wordpress that there is an uninstallation routine

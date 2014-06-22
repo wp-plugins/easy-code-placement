@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor
 Requires at least: 3.0.1
 Tested up to: 3.9.1
-Stable tag: 1.6
+Stable tag: 2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 
 = Which Codes? =  
 
-* PHP 
+* PHP
 * HTML
 * CSS
 * AdSense or other Ads
@@ -77,6 +77,15 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 2.0 =
+* 23.06.2014
+* Added: WordPress Table Layout
+* Added: Pagination
+* Changed Update Routine
+* Added: Update Routine when Version Skipping
+* Code optimization
+* Better Comparison Operator (Equal to Identical)
 
 = 1.6 =
 * 21.06.2014

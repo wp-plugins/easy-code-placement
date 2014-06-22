@@ -39,16 +39,18 @@ function ecp_install(){
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1";
     $wpdb->query($ecp_table);
 
-    // create version table
-    $ecp_version = "CREATE TABLE IF NOT EXISTS ".$wpdb->prefix."ecp_version (
+    // create options table
+    $ecp_options = "CREATE TABLE IF NOT EXISTS ".$wpdb->prefix."ecp_options (
         `id` int NOT NULL AUTO_INCREMENT,
-        `version` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+        `option_name` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+        `option_value` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1";
-    $wpdb->query($ecp_version);
+    $wpdb->query($ecp_options);
         
     // insert data
-    $wpdb->insert($wpdb->prefix.'ecp_version', array('version' => ECP_VERSION));
+    $wpdb->insert($wpdb->prefix.'ecp_options', array('option_name' => 'version','option_value' => ECP_VERSION));
+    $wpdb->insert($wpdb->prefix.'ecp_options', array('option_name' => 'perpage','option_value' => '10'));
 }
 
 // tell wordpress that there is an installation routine
