@@ -157,7 +157,7 @@ if ($ecp_options_version === '2.0') {
     global $wpdb;
     $t_ecp_version = $wpdb->get_var("SELECT version FROM ".$wpdb->prefix."ecp_version WHERE ID=1");
 
-    if ($t_ecp_version === '' &&  ECP_VERSION === '2.0') {
+    if ($t_ecp_version === '' &&  ECP_VERSION === '2.1') {
         ecp_update01();
         ecp_update02();
         ecp_update03();
@@ -165,29 +165,29 @@ if ($ecp_options_version === '2.0') {
         ecp_update05();
         ecp_update06();
         return;
-    } elseif ($t_ecp_version === '1.3' &&  ECP_VERSION === '2.0') {
+    } elseif ($t_ecp_version === '1.3' &&  ECP_VERSION === '2.1') {
         ecp_update02();
         ecp_update03();
         ecp_update04();
         ecp_update05();
         ecp_update06();
         return;
-    } elseif ($t_ecp_version === '1.3_u' &&  ECP_VERSION === '2.0') {
+    } elseif ($t_ecp_version === '1.3_u' &&  ECP_VERSION === '2.1') {
         ecp_update03();
         ecp_update04();
         ecp_update05();
         ecp_update06();
         return;
-    } elseif ($t_ecp_version === '1.4' &&  ECP_VERSION === '2.0') {
+    } elseif ($t_ecp_version === '1.4' &&  ECP_VERSION === '2.1') {
         ecp_update04();
         ecp_update05();
         ecp_update06();
         return;
-    } elseif ($t_ecp_version === '1.5' &&  ECP_VERSION === '2.0') {
+    } elseif ($t_ecp_version === '1.5' &&  ECP_VERSION === '2.1') {
         ecp_update05();
         ecp_update06();
         return;
-    } elseif ($t_ecp_version === '1.6' &&  ECP_VERSION === '2.0') {
+    } elseif ($t_ecp_version === '1.6' &&  ECP_VERSION === '2.1') {
         ecp_update06();
         return;
     }
