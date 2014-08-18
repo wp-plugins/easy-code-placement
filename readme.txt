@@ -3,8 +3,8 @@ Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode
 Requires at least: 3.0.1
-Tested up to: 3.9.1
-Stable tag: 2.1
+Tested up to: 3.9.2
+Stable tag: 2.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -78,6 +78,11 @@ Not yet
 
 == Changelog ==
 
+= 2.2 =
+* 18.08.2014
+* Compatibility check for WordPress Version 3.9.2 
+* FIX: Error while edeting that the Name already exists
+
 = 2.1 =
 * 22.07.2014
 * Changed Screenshot 1
@@ -134,7 +139,7 @@ Not yet
 
 = 1.1 =
 * 28.05.2014
-* FIX: Fixes that the Shortcode dont work
+* FIX: Shortcode dont work
 
 = 1.0 =
 * 26.05.2014

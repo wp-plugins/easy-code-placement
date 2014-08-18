@@ -43,7 +43,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         exit();
     }
 
-    if ($t_ecp_name =="" || $t_ecp_code =="") {
+    if ($t_ecp_code =="") {
         // when post emty goto error page
 	$ecp_error = __('The Code Name and / or the Code must be filled in', 'ecp');
         $ecp_error_page = "&load=ecpedit";
@@ -51,18 +51,8 @@ if(isset($_POST) && isset($_POST['submit'])) {
         ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
         exit();
     }
-
-    $ecp_count = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."ecp_data WHERE name = '$t_ecp_name'");
-    if ($wpdb->num_rows) {
-        // when name in database goto error page
-	$ecp_error = __('The Code Name already exist - It must be uniqe', 'ecp');
-        $ecp_error_page = "&load=ecpedit";
-        $ecp_error_id = "&ecpid=$ecp_id";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
-    }
     
-    $wpdb->update($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status), array('id'=>$ecp_id));
+    $wpdb->update($wpdb->prefix.'ecp_data', array('code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status), array('id'=>$ecp_id));
 
     // when edited goto options page
     header('Location: options-general.php?page=ecp_option_page');
@@ -97,7 +87,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         <td><?php _e('Name','ecp'); ?>:</td>
     </tr>
     <tr>
-        <td><input type="text" style="width: 250px; height: 50px;" name="name" align="center" value="<?php echo ($ecp_load->name); ?>">
+        <td><input disabled="disabled" type="text" style="width: 250px; height: 50px;" name="name" align="center" value="<?php echo ($ecp_load->name); ?>">
         <br>- <?php _e('Only Letters and Numbers are allowed','ecp'); ?>.
         <br>- <?php _e('Instead of Whitesspaces use Underlines','ecp'); ?>.
         <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>
