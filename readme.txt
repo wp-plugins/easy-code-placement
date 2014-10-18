@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 2.3
+Stable tag: 2.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -38,8 +38,10 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 
 = Languages =
 
-* Englisch
-* German
+* Englisch by wassereimer
+* German by wassereimer
+
+If you have translated this Plugin into an Language that is not listed here, please open a Support-Thread and place a link in it where i can download the files. Than i will add the Language in the next Version and place a "Thank you" above.
 
 == Installation ==
 
@@ -63,7 +65,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 
 == Upgrade Notice ==
 
-No
+Removed buggy Update function for old Versions ( < 2.3 ) - There was enough time to Update the Plugin !!! If you have an older Version please de- and install the Plugin again !!! - Thanks @ Befuture BefDreamer
 
 == Frequently Asked Questions ==
 
@@ -77,6 +79,10 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 2.4 =
+* 18.10.2014
+* Removed buggy Update function for old Versions - There was enough time to Update the Plugin - Thanks @ Befuture BefDreamer
 
 = 2.3 =
 * 05.09.2014
