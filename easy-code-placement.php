@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Code Placement - for any Code you want
-Version: 2.4
+Version: 2.4.1
 Plugin URI: http://www.randnotizen.org/easy-code-placement/
 Author: Jens Herdy
 Author URI: http://www.randnotizen.org/
@@ -13,7 +13,7 @@ License: GPLv3
 ob_start();
 error_reporting(E_ALL);
 define('ECP_FILE',__FILE__);
-define('ECP_VERSION','2.4');
+define('ECP_VERSION','2.4.1');
 
 // load functions, classes
 include( dirname( __FILE__ ) . '/inc/functions.php' );

@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
-Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode
+Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode, Text
 Requires at least: 3.0.1
-Tested up to: 4.0
-Stable tag: 2.4
+Tested up to: 4.1
+Stable tag: 2.4.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,6 +16,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 
 = Which Codes? =  
 
+* Text
 * PHP
 * HTML
 * CSS
@@ -79,6 +80,11 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 2.4.1 =
+* 17.12.2014
+* Compatibility check for WordPress Version 4.1
+* Edited the Description that the Plugin also can be used for text
 
 = 2.4 =
 * 18.10.2014
