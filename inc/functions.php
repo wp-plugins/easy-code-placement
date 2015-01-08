@@ -88,11 +88,11 @@ function render_ecp_options_table(){
     $ecp_options_table->display();
 }
 
-// updates from 2.4 to 2.4.1
+// updates from 2.4.1 to 2.4.2
 function ecp_update(){
     global $wpdb;
-    $wpdb->update($wpdb->prefix.'ecp_data', array( 'version'=>'2.4.1' ), array( 'version'=>'2.4' ));
-    $wpdb->update($wpdb->prefix.'ecp_options', array( 'option_value'=>'2.4.1' ), array( 'option_name'=>'version' ));
+    $wpdb->update($wpdb->prefix.'ecp_data', array( 'version'=>'2.4.2' ), array( 'version'=>'2.4.1' ));
+    $wpdb->update($wpdb->prefix.'ecp_options', array( 'option_value'=>'2.4.2' ), array( 'option_name'=>'version' ));
 }
 
 // update function
@@ -101,7 +101,7 @@ function ecp_do_update(){
 global $wpdb;
 $ecp_options_version = $wpdb->get_var("SELECT option_value FROM ".$wpdb->prefix."ecp_options WHERE option_name = 'version'" );
 
-if ($ecp_options_version === '2.4.1') {
+if ($ecp_options_version === '2.4.2') {
     return;
 } else {
 
