@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Easy Code Placement - for any Code you want
+Plugin Name: Easy Code Placement
 Version: 2.4.2
 Plugin URI: http://www.randnotizen.org/easy-code-placement/
 Author: Jens Herdy
 Author URI: http://www.randnotizen.org/
-Description: A great Wordpress Plugin to place any Code - anywhere you want.
+Description: A great Wordpress Plugin to place ANY Code ANYWHERE you want.
 License: GPLv3
 */
 
