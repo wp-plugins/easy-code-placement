@@ -17,8 +17,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         $ecp_error = __('A maximum of 30 Characters is allowed', 'ecp');
         $ecp_error_page = "&load=ecpadd";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();  
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
 
     if (preg_match("/[^a-zA-Z0-9\_-]/i", $t_ecp_name)) {
@@ -26,8 +25,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         $ecp_error = __('Special Characters are not allowed in the Code Name', 'ecp');
         $ecp_error_page = "&load=ecpadd";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
 
     if ($t_ecp_name =="" || $t_ecp_code =="") {
@@ -35,8 +33,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
 	$ecp_error = __('The Code Name and / or the Code must be filled in', 'ecp');
         $ecp_error_page = "&load=ecpadd";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
     
     $ecp_count = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."ecp_data WHERE name = '$t_ecp_name'");
@@ -45,8 +42,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
 	$ecp_error = __('The Code Name already exist - It must be uniqe', 'ecp');
         $ecp_error_page = "&load=ecpadd";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
 
     $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status,'version'=>ECP_VERSION));

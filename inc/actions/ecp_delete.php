@@ -11,8 +11,7 @@ if($ecp_id=="" || !is_numeric($ecp_id)) {
     $ecp_error = __('Modifying of the ID is not allowed', 'ecp');
     $ecp_error_page = "";
     $ecp_error_id = "";
-    ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-    exit();
+    return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
 }
 
 // delete code

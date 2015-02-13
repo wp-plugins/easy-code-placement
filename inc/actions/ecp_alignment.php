@@ -12,15 +12,13 @@ if ($ecp_id=="" || !is_numeric($ecp_id)) {
     $ecp_error = __('Modifying of the ID is not allowed', 'ecp');
     $ecp_error_page = "";
     $ecp_error_id = "";
-    ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-    exit();
+    return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
 } elseif ($ecp_alignment !=="0" && $ecp_alignment !=="1" && $ecp_alignment !=="2" && $ecp_alignment !=="3") {
     // when get emty or other than numbers goto error page
     $ecp_error = __('Modifying the Alignment to something else than 0, 1, 2 or 3 is not allowed', 'ecp');
     $ecp_error_page = "";
     $ecp_error_id = "";
-    ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-    exit();
+    return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
 }
 
 // change status	

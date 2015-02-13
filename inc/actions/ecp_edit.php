@@ -7,52 +7,28 @@ if(isset($_POST) && isset($_POST['submit'])) {
 
     // secure post data and set variables
     $_POST = stripslashes_deep ($_POST);
-    $t_ecp_name = $_POST['name'];
     $t_ecp_code = $_POST['code'];
     $t_ecp_alignment = $_POST['alignment'];
     $t_ecp_status = $_POST['status'];
+    $t_ecp_id = $_POST['id'];
 
-    // secure get data and set variables
-    $_GET = stripslashes_deep ($_GET);
-    $ecp_id = $_GET['ecpid'];
-
-    if($ecp_id=="" || !is_numeric($ecp_id)) {
+    if($t_ecp_id=="" || !is_numeric($t_ecp_id)) {
         // when get emty or other than numbers goto error page
         $ecp_error = __('Modifying of the ID is not allowed', 'ecp');
         $ecp_error_page = "";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
-    }
-
-    if (strlen($t_ecp_name) > 30) {
-        // when name is longer than 30 chars
-        $ecp_error = __('A maximum of 30 Characters is allowed', 'ecp');
-        $ecp_error_page = "&load=ecpadd";
-        $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();  
-    }
-
-    if (preg_match("/[^a-zA-Z0-9\_-]/i", $t_ecp_name)) {
-        // when name contains spechial chars
-        $ecp_error = __('Special Characters are not allowed in the Code Name', 'ecp');
-        $ecp_error_page = "&load=ecpedit";
-        $ecp_error_id = "&ecpid=$ecp_id";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
 
     if ($t_ecp_code =="") {
         // when post emty goto error page
-	$ecp_error = __('The Code Name and / or the Code must be filled in', 'ecp');
+	$ecp_error = __('The Code must be filled in', 'ecp');
         $ecp_error_page = "&load=ecpedit";
         $ecp_error_id = "&ecpid=$ecp_id";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
     
-    $wpdb->update($wpdb->prefix.'ecp_data', array('code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status), array('id'=>$ecp_id));
+    $wpdb->update($wpdb->prefix.'ecp_data', array('code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'status'=>$t_ecp_status), array('id'=>$t_ecp_id));
 
     // when edited goto options page
     header('Location: options-general.php?page=ecp_option_page');
@@ -70,8 +46,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         $ecp_error = __('Modifying of the ID is not allowed', 'ecp');
         $ecp_error_page = "";
         $ecp_error_id = "";
-        ecp_error($ecp_error, $ecp_error_page, $ecp_error_id);
-        exit();
+        return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
 
     $ecp_load = $wpdb->get_row('SELECT * FROM '.$wpdb->prefix.'ecp_data WHERE id= '.$ecp_id.'');
@@ -88,6 +63,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     </tr>
     <tr>
         <td><input disabled="disabled" type="text" style="width: 250px; height: 50px;" name="name" align="center" value="<?php echo ($ecp_load->name); ?>">
+        <input type="hidden" name="id" align="center" value="<?php echo ($ecp_load->id); ?>">
         <br>- <?php _e('Only Letters and Numbers are allowed','ecp'); ?>.
         <br>- <?php _e('Instead of Whitesspaces use Underlines','ecp'); ?>.
         <br>- <?php _e('A maximum of 30 Characters is allowed','ecp'); ?>.</td>

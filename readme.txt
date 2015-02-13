@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode, Text
 Requires at least: 3.0.1
 Tested up to: 4.1
-Stable tag: 2.4.2
+Stable tag: 2.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -80,6 +80,14 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 2.5 =
+* 13.02.2015
+* FIX: When edeting something the name of the shortcode disapears in the list and doesn´t work anymore
+* FIX: While Updating the version in data Table doesn´t set to new version number
+* Better Error handling - return instead of exit
+* Added Banner for WordPress Plugin Page
+* Added Icons for WordPress Plugin Installer
 
 = 2.4.2 =
 * 08.01.2015
