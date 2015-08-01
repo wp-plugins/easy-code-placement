@@ -12,7 +12,7 @@ A great Wordpress plugin to place any Code - anywhere you want.
 
 == Description ==
 
-Easy Code Placement provides a very easy way to place any Code where you want to have it. - You can use the WordPress Text Widget with an Shortcode in it, only a Shortcode anywhere in Posts/Pages or PHP-Snippets to place your code where you want.
+Easy Code Placement provides a very easy way to place any Code where you want to have it. - You can use the WordPress Text Widget with an Shortcode in it or just place a Shortcode anywhere in Posts/Pages to display your code where you want to have it.
 
 = Which Codes? =  
 
@@ -30,10 +30,9 @@ Easy Code Placement provides a very easy way to place any Code where you want to
      
 * Save unlimited Codes on options page
 * Activate and Deactivate the Codes
-* Standard WP Text Widget Modified for usage with PHP
+* Set the alignment for the Codes
 * Place a Code with a Shortcode
-* Place a Code with a PHP-Snippet
-* Place a Code with the WordPress Text-Widget
+* Place a Code with the standard WordPress Text-Widget
 * Ready for translations
 * Clean uninstall - No data left
 
