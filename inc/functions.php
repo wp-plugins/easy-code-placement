@@ -29,24 +29,15 @@ function ecp_error($ecp_error, $ecp_error_page, $ecp_error_id) {
     include ( dirname( __FILE__ ) . '/error.php' );
 }
 
-// modify text widget
-add_filter('widget_text', 'ecp_widget_text', 9999);
-function ecp_widget_text($text) {
+// allow php code
+function ecp_allow_php($text) {
     if (strpos($text, '<' . '?') !== false) {
         ob_start();
         eval('?' . '>' . $text);
-        $text = ob_get_clean();
+        $text = ob_get_contents();
+        ob_end_clean();
     }
     return $text;
-}
-$ecp_widget_id = null;
-add_filter('the_content', 'ecp_widget_content', 9999);
-function ecp_widget_content($content) {
-    global $post, $ecp_widget_id;
-    if (is_single() || is_page()) {
-        $ecp_widget_id = $post->ID;
-    }
-    return $content;
 }
 
 // replace shortcode with code
@@ -88,12 +79,11 @@ function render_ecp_options_table(){
     $ecp_options_table->display();
 }
 
-// updates from 2.4.2 to 2.5
+// updates from 2.5 to 2.6
 function ecp_update(){
     global $wpdb;
-    $wpdb->query("UPDATE ".$wpdb->prefix."ecp_data SET version='2.5'");
-    $wpdb->update($wpdb->prefix.'ecp_options', array( 'option_value'=>'2.5' ), array( 'option_name'=>'version' ));
-    $wpdb->query("UPDATE ".$wpdb->prefix."ecp_data SET shortcode = name");
+    $wpdb->query("UPDATE ".$wpdb->prefix."ecp_data SET version='2.6'");
+    $wpdb->update($wpdb->prefix.'ecp_options', array( 'option_value'=>'2.6' ), array( 'option_name'=>'version' ));
 }
 
 // update function
@@ -102,7 +92,7 @@ function ecp_do_update(){
 global $wpdb;
 $ecp_options_version = $wpdb->get_var("SELECT option_value FROM ".$wpdb->prefix."ecp_options WHERE option_name = 'version'" );
 
-if ($ecp_options_version === '2.5') {
+if ($ecp_options_version === '2.6') {
     return;
 } else {
 

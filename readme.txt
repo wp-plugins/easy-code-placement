@@ -3,8 +3,8 @@ Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode, Text
 Requires at least: 3.0.1
-Tested up to: 4.2
-Stable tag: 2.5.1
+Tested up to: 4.2.3
+Stable tag: 2.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -64,10 +64,6 @@ If you have translated this Plugin into an Language that is not listed here, ple
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Now you can go to the Settings-Page on 'Settings' -> 'Easy Code Placement'
 
-== Upgrade Notice ==
-
-Removed buggy Update function for old Versions ( < 2.3 ) - There was enough time to Update the Plugin !!! If you have an older Version please de- and install the Plugin again !!! - Thanks @ Befuture BefDreamer
-
 == Frequently Asked Questions ==
 
 Not yet
@@ -81,14 +77,18 @@ Not yet
 
 == Changelog ==
 
+= 2.6 =
+* 01.08.2015
+* FIX: Shortcode dont work on post and pages
+
 = 2.5.1 =
 * 24.04.2015
 * Compatibility check for WordPress Version 4.2
 
 = 2.5 =
 * 13.02.2015
-* FIX: When edeting something the name of the shortcode disapears in the list and doesn´t work anymore
-* FIX: While Updating the version in data Table doesn´t set to new version number
+* FIX: When edeting something the name of the shortcode disapears in the list and doesnt work anymore
+* FIX: While Updating the version in data Table doesnt set to new version number
 * Better Error handling - return instead of exit
 * Added Banner for WordPress Plugin Page
 * Added Icons for WordPress Plugin Installer
