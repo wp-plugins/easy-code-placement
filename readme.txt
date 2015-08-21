@@ -78,10 +78,11 @@ Not yet
 == Changelog ==
 
 = 2.7 =
-* 20.08.2015
+* 21.08.2015
 * Added compatibility for WPMU/Network Sites
 * FIX: After deactivating and activating the plugin, there was duplicated data in the options database
-* Added Tags to find the Plugin on the WordPress Website
+* Added more Tags to find the Plugin on the WordPress Website
+* Update procedure runs now only on Dashboard sites to reduce the load on the Website
 
 = 2.6.1 =
 * 14.08.2015
