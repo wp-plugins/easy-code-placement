@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Easy Code Placement
-Version: 2.6.1
+Version: 2.7
 Plugin URI: http://www.randnotizen.org/easy-code-placement/
 Author: Jens Herdy
 Author URI: http://www.randnotizen.org/
@@ -9,13 +9,10 @@ Description: A great Wordpress Plugin to place ANY Code ANYWHERE you want.
 License: GPLv3
 */
 
-// error reporting off for pub releases
-// error_reporting(E_ALL);
-
 // standards
 ob_start();
 define('ECP_FILE',__FILE__);
-define('ECP_VERSION','2.6');
+define('ECP_VERSION','2.7');
 
 // load functions, classes
 include( dirname( __FILE__ ) . '/inc/functions.php' );
@@ -35,7 +32,7 @@ add_filter ( 'the_excerpt', 'ecp_allow_php', 99);
 // load languages
 load_plugin_textdomain('ecp', false, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
 
-// load install and uninstall files
+// include install and uninstall files
 include( dirname( __FILE__ ) . '/inc/install.php' );
 include( dirname( __FILE__ ) . '/inc/uninstall.php' );
 

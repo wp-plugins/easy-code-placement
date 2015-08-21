@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: adsense, ad, ads, shortcode, php, code, google, advertising, adsense plugin, plugin, google adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, plugin, shortcode, Text
 Requires at least: 3.0.1
 Tested up to: 4.3
-Stable tag: 2.6.1
+Stable tag: 2.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,6 +34,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 * Place a Code with a Shortcode
 * Place a Code with the standard WordPress Text-Widget
 * Ready for translations
+* WPMU/Network compatible
 * Clean uninstall - No data left
 
 = Languages =
@@ -75,6 +76,11 @@ Not yet
 4. Widget with Shortcode
 
 == Changelog ==
+
+= 2.7 =
+* 20.08.2015
+* Added compatibility for WPMU/Network Sites
+* FIX: After deactivating and activating the plugin, there was duplicated data in the options database
 
 = 2.6.1 =
 * 14.08.2015
