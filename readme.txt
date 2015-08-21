@@ -1,7 +1,7 @@
 ﻿=== Plugin Name ===
 Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
-Tags: ad, addthis, ads, adsense, adsense plugin, advertising, affilimatch, affilinet, align, alignment, amazon associates, audio, clicksor, code, codes, css, flash, google, google adsense, html, infolinks, insert, java, javascript, multisite, network, offline, online, page, pages, php, place, plugin, post, posts, shortcode, shortcodes, snippet, snippets, text, video, widget, wpmu
+Tags: ad, addthis, ads, adsense, adsense plugin, advertising, affilimatch, affilinet, align, alignment, amazon associates, audio, clicksor, code, codes, css, flash, google, google adsense, html, infolinks, insert, java, javascript, multisite, network, offline, online, page, pages, php, place, plugin, post, posts, shortcode, shortcodes, snippet, snippets, text, video, widget
 Requires at least: 3.0.1
 Tested up to: 4.3
 Stable tag: 2.7
@@ -34,7 +34,7 @@ Easy Code Placement provides a very easy way to place any Code where you want to
 * Place a Code with a Shortcode
 * Place a Code with the standard WordPress Text-Widget
 * Ready for translations
-* WPMU/Network compatible
+* Multisite/Network compatible
 * Clean uninstall - No data left
 
 = Languages =
@@ -79,7 +79,7 @@ Not yet
 
 = 2.7 =
 * 21.08.2015
-* Added compatibility for WPMU/Network Sites
+* Added compatibility for Multisite/Network Sites
 * FIX: After deactivating and activating the plugin, there was duplicated data in the options database
 * Added more Tags to find the Plugin on the WordPress Website
 * Update procedure runs now only on Dashboard sites to reduce the load on the Website
