@@ -1,7 +1,7 @@
 ﻿=== Plugin Name ===
 Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
-Tags: adsense, ad, ads, shortcode, php, code, codes, google, advertising, adsense plugin, plugin, google adsense, adsense, insert, place, html, css, java, addthis, flash, video, audio, javascript, affilimatch, affilinet, infolinks, amazon associates, clicksor, post, posts, page, pages, plugin, shortcode, text, widget, snippet, wpmu, multisite, network, align, alignment, online, offline
+Tags: ad, addthis, ads, adsense, adsense plugin, advertising, affilimatch, affilinet, align, alignment, amazon associates, audio, clicksor, code, codes, css, flash, google, google adsense, html, infolinks, insert, java, javascript, multisite, network, offline, online, page, pages, php, place, plugin, post, posts, shortcode, shortcodes, snippet, snippets, text, video, widget, wpmu
 Requires at least: 3.0.1
 Tested up to: 4.3
 Stable tag: 2.7
