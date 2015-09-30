@@ -18,6 +18,6 @@ if($ecp_id=="" || !is_numeric($ecp_id)) {
 $wpdb->delete($wpdb->prefix.'ecp_data', array('id'=>$ecp_id));
 
 // when data is deleted goto options page	
-header('Location: options-general.php?page=ecp_option_page');
+header('Location: options-general.php?page=ecp');
 
 ?>

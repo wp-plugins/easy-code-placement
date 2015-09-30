@@ -12,12 +12,12 @@ License: GPLv3
 // standards
 ob_start();
 define('ECP_FILE',__FILE__);
-define('ECP_VERSION','2.7');
+define('ECP_VERSION','3.0');
 
 // load functions, classes
 include( dirname( __FILE__ ) . '/inc/functions.php' );
 include( dirname( __FILE__ ) . '/inc/classes/class-ecp-tables.php' );
-include( dirname( __FILE__ ) . '/inc/classes/class-ecp-options-table.php' );
+include( dirname( __FILE__ ) . '/inc/classes/class-ecp-table.php' );
 
 // set filters to replace shortcodes
 add_filter ( 'the_content', 'do_shortcode', 99);
@@ -40,6 +40,6 @@ include( dirname( __FILE__ ) . '/inc/uninstall.php' );
 ecp_do_update();
 
 // add options menu
-add_action( 'admin_menu', 'ecp_add_options_page' );
+add_action( 'admin_menu', 'ecp_add_page' );
 
 ?>

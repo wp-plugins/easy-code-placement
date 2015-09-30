@@ -23,7 +23,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     if ($t_ecp_code =="") {
         // when post emty goto error page
 	$ecp_error = __('The Code must be filled in', 'ecp');
-        $ecp_error_page = "&load=ecpedit";
+        $ecp_error_page = "&load=edit";
         $ecp_error_id = "&ecpid=$ecp_id";
         return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
@@ -31,7 +31,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     $wpdb->update($wpdb->prefix.'ecp_data', array('code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'status'=>$t_ecp_status), array('id'=>$t_ecp_id));
 
     // when edited goto options page
-    header('Location: options-general.php?page=ecp_option_page');
+    header('Location: options-general.php?page=ecp');
     exit();
 
 } else {
@@ -53,7 +53,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
 ?>
 
 <div class="wrap">
-<h2>Easy Code Placement <?php _e('Options','ecp'); ?></h2>
+<h2>Easy Code Placement - <?php _e('Edit Code','ecp'); ?></h2>
 <br>
 
 <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
@@ -95,7 +95,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         </td>
     </tr>
 </table>
-<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'>&nbsp;&nbsp;<input type="submit" name="submit" class="button-primary" value="<?php _e('Save','ecp'); ?>">
+<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp');?>"'>&nbsp;&nbsp;<input type="submit" name="submit" class="button-primary" value="<?php _e('Save','ecp'); ?>">
 </form>
 
 </div>

@@ -15,7 +15,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     if (strlen($t_ecp_name) > 30) {
         // when name is longer than 30 chars
         $ecp_error = __('A maximum of 30 Characters is allowed', 'ecp');
-        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_page = "&load=add";
         $ecp_error_id = "";
         return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
@@ -23,7 +23,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     if (preg_match("/[^a-zA-Z0-9\_-]/i", $t_ecp_name)) {
         // when name contains spechial chars
         $ecp_error = __('Special Characters are not allowed in the Code Name', 'ecp');
-        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_page = "&load=add";
         $ecp_error_id = "";
         return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
@@ -31,7 +31,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     if ($t_ecp_name =="" || $t_ecp_code =="") {
         // when post emty goto error page
 	$ecp_error = __('The Code Name and / or the Code must be filled in', 'ecp');
-        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_page = "&load=add";
         $ecp_error_id = "";
         return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
@@ -40,7 +40,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     if ($wpdb->num_rows) {
         // when name in database goto error page
 	$ecp_error = __('The Code Name already exist - It must be uniqe', 'ecp');
-        $ecp_error_page = "&load=ecpadd";
+        $ecp_error_page = "&load=add";
         $ecp_error_id = "";
         return(ecp_error($ecp_error, $ecp_error_page, $ecp_error_id));
     }
@@ -48,7 +48,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
     $wpdb->insert($wpdb->prefix.'ecp_data', array('name' =>$t_ecp_name,'code'=>$t_ecp_code,'alignment'=>$t_ecp_alignment,'shortcode'=>$t_ecp_name,'status'=>$t_ecp_status,'version'=>ECP_VERSION));
 
     // when added to database goto options page
-    header('Location: options-general.php?page=ecp_option_page');
+    header('Location: options-general.php?page=ecp');
     exit();
 
 } else {
@@ -56,7 +56,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
 ?>
 
 <div class="wrap">
-<h2>Easy Code Placement <?php _e('Options','ecp'); ?></h2>
+<h2>Easy Code Placement - <?php _e('New Code','ecp'); ?></h2>
 <br>
 
 <form method="post" action="<?php echo $_SERVER["REQUEST_URI"]; ?>">
@@ -97,7 +97,7 @@ if(isset($_POST) && isset($_POST['submit'])) {
         </td>
     </tr>
 </table>
-<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp_option_page');?>"'>&nbsp;&nbsp;<input type="submit" name="submit" class="button-primary" value="<?php _e('Add','ecp'); ?>">
+<br><input type="button" class="button-secondary" value="<?php _e('Back','ecp'); ?>" onClick='document.location.href="<?php echo admin_url('options-general.php?page=ecp');?>"'>&nbsp;&nbsp;<input type="submit" name="submit" class="button-primary" value="<?php _e('Add','ecp'); ?>">
 </form>
 
 </div> 

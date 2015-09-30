@@ -3,8 +3,8 @@ Contributors: wassereimer
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2X2EH5MYGPLL4
 Tags: ad, addthis, ads, adsense, adsense plugin, advertising, affilimatch, affilinet, align, alignment, amazon associates, audio, clicksor, code, codes, css, flash, google, google adsense, html, infolinks, insert, java, javascript, multisite, network, offline, online, page, pages, php, place, plugin, post, posts, shortcode, shortcodes, snippet, snippets, text, video, widget
 Requires at least: 3.0.1
-Tested up to: 4.3
-Stable tag: 2.7
+Tested up to: 4.3.1
+Stable tag: 3.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -74,8 +74,19 @@ Not yet
 2. Add new Code
 3. Edit existing Code
 4. Widget with Shortcode
+5. Settings
+6. System Informations
 
 == Changelog ==
+
+= 3.0 =
+* 30.09.2015
+* Added an Information Page
+* Added an Options Page
+* Removed the p-Tag if the alignment is set to none - Thanks @ Steven
+* Compatibility check for WordPress Version 4.3.1
+* Updated the existing Screenshots and added two
+* Updated the German translation
 
 = 2.7 =
 * 21.08.2015

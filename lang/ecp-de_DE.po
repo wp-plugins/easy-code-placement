@@ -2,240 +2,224 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Easy Code Placement - for any Code you want v1.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-06-21 08:27:46+0000\n"
-"Last-Translator: Jens Herdy <ecp@randnotizen.org>\n"
+"POT-Creation-Date: Sun Aug 23 2015 17:08:28 GMT+0200 (Mitteleuropäische "
+"Sommerzeit)\n"
+"PO-Revision-Date: Wed Sep 30 2015 22:11:04 GMT+0200 (Mitteleuropäische "
+"Sommerzeit)\n"
+"Last-Translator: wassereimer <herdy@gmx.de>\n"
 "Language-Team: \n"
+"Language: German\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
-"X-Poedit-Basepath: \n"
-"X-Poedit-Bookmarks: \n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: de_DE"
 
-#: inc/ecp_add.php:63
-#: inc/ecp_edit.php:91
-#: inc/error.php:2
-#: inc/options.php:24
-#@ ecp
-msgid "Options"
-msgstr "Optionen"
-
-#: inc/ecp_add.php:69
-#: inc/ecp_edit.php:97
-#: inc/options.php:28
-#@ ecp
-msgid "Name"
-msgstr "Name"
-
-#: inc/ecp_add.php:78
-#: inc/ecp_edit.php:106
-#@ ecp
-msgid "Code"
-msgstr "Code"
-
-#: inc/ecp_add.php:104
-#: inc/ecp_edit.php:132
-#: inc/error.php:13
-#@ ecp
-msgid "Back"
-msgstr "Zurück"
-
-#: inc/ecp_add.php:104
-#@ ecp
-msgid "Add"
-msgstr "Hinzufügen"
-
-#: inc/options.php:94
-#@ ecp
-msgid "Add New Code"
-msgstr "Neuen Code hinzufügen"
-
-#: inc/options.php:29
-#@ ecp
-msgid "Shortcode"
-msgstr "Shortcode"
-
-#: inc/options.php:30
-#@ ecp
-msgid "Action"
-msgstr "Aktion"
-
-#: inc/options.php:73
-#@ ecp
-msgid "Edit"
-msgstr "Bearbeiten"
-
-#: inc/options.php:74
-#@ ecp
-msgid "Delete"
-msgstr "Löschen"
-
-#: inc/options.php:86
-#@ ecp
-msgid "No Code found - Click \"Add New Code\" to add one."
-msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
-
-#: inc/ecp_add.php:26
-#: inc/ecp_edit.php:39
-#@ ecp
-msgid "Special Characters are not allowed in the Code Name"
-msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
-
-#: inc/ecp_edit.php:132
-#@ ecp
-msgid "Save"
-msgstr "Speichern"
-
-#: inc/error.php:7
-#@ ecp
-msgid "Error"
-msgstr "Fehler"
-
-#: inc/ecp_alignment.php:12
-#: inc/ecp_delete.php:11
-#: inc/ecp_edit.php:21
-#: inc/ecp_edit.php:80
-#: inc/ecp_status.php:12
-#@ ecp
-msgid "Modifying of the ID is not allowed"
-msgstr "Das verändern der ID ist nicht erlaubt"
-
-#: inc/ecp_status.php:19
-#@ ecp
-msgid "Modifying of the Status to something else than 1 or 2 is not allowed"
-msgstr "Das verändern des Status zu etwas anderem als 1 oder 2 ist nicht erlaubt"
-
-#: inc/ecp_add.php:35
-#: inc/ecp_edit.php:48
-#@ ecp
-msgid "The Code Name and / or the Code must be filled in"
-msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
-
-#: inc/ecp_add.php:17
-#: inc/ecp_add.php:75
-#: inc/ecp_edit.php:30
-#: inc/ecp_edit.php:103
-#@ ecp
 msgid "A maximum of 30 Characters is allowed"
 msgstr "Maximal 30 Zeichen sind erlaubt"
 
-#: inc/ecp_add.php:73
-#: inc/ecp_edit.php:101
-#@ ecp
-msgid "Only Letters and Numbers are allowed"
-msgstr "Nur Buchstaben und Zahlen sind erlaubt"
+msgid "Action"
+msgstr "Aktion"
 
-#: inc/ecp_add.php:74
-#: inc/ecp_edit.php:102
-#@ ecp
-msgid "Instead of Whitesspaces use Underlines"
-msgstr "Anstelle von Leerzeichen sind Unterstriche zu benutzen"
+msgid "Add"
+msgstr "Hinzufügen"
 
-#: inc/options.php:97
-#@ ecp
-msgid "If you want to thank the developer for this free Plugin, you are welcome to make a donation via PayPal (you don't need a PayPal account to make the donation)."
-msgstr "Wenn du dem Entwickler für dieses kostenlose Plugin danken möchtest, kannst du gerne bei PayPal eine Spende hinterlassen (es wird kein PayPal Account benötigt)."
+msgid "Add New Code"
+msgstr "Neuen Code hinzufügen"
 
-#: inc/ecp_add.php:84
-#: inc/ecp_edit.php:112
-#@ ecp
 msgid "Alignment"
 msgstr "Ausrichtung"
 
-#: inc/ecp_add.php:88
-#: inc/ecp_edit.php:116
-#: inc/options.php:65
-#@ ecp
-msgid "None"
-msgstr "Keine"
+msgid "Back"
+msgstr "Zurück"
 
-#: inc/ecp_add.php:89
-#: inc/ecp_edit.php:117
-#: inc/options.php:67
-#@ ecp
-msgid "Left"
-msgstr "Links"
-
-#: inc/ecp_add.php:90
-#: inc/ecp_edit.php:118
-#: inc/options.php:69
-#@ ecp
 msgid "Center"
 msgstr "Zentriert"
 
-#: inc/ecp_add.php:91
-#: inc/ecp_edit.php:119
-#: inc/options.php:71
-#@ ecp
-msgid "Right"
-msgstr "Rechts"
-
-#: inc/ecp_add.php:95
-#: inc/ecp_edit.php:123
-#@ ecp
-msgid "Status"
-msgstr "Status"
-
-#: inc/ecp_add.php:99
-#: inc/ecp_edit.php:127
-#: inc/options.php:52
-#@ ecp
-msgid "Online"
-msgstr "Online"
-
-#: inc/ecp_add.php:100
-#: inc/ecp_edit.php:128
-#: inc/options.php:59
-#@ ecp
-msgid "Offline"
-msgstr "Offline"
-
-#: inc/options.php:52
-#@ ecp
-msgid "Status is Online - Click to change"
-msgstr "Status ist Online - Klicke um dies zu ändern"
-
-#: inc/options.php:59
-#@ ecp
-msgid "Status is Offline - Click to change"
-msgstr "Status ist Offline - Klicke um dies zu ändern"
-
-#: inc/ecp_alignment.php:19
-#@ ecp
-msgid "Modifying the Alignment to something else than 0, 1, 2 or 3 is not allowed"
-msgstr "Das verändern der Ausrichtung zu etwas anderem als 0, 1, 2 oder 3 ist nicht erlaubt"
-
-#: inc/options.php:65
-#@ ecp
-msgid "No Alignment - Click to change"
-msgstr "Keine Ausrichtung - Klicke um dies zu ändern"
-
-#: inc/options.php:67
-#@ ecp
-msgid "Left Alignment - Click to change"
-msgstr "Linke Ausrichtung - Klicke um dies zu ändern"
-
-#: inc/options.php:69
-#@ ecp
 msgid "Center Alignment - Click to change"
 msgstr "Zentrierte Ausrichtung - Klicke um dies zu ändern"
 
-#: inc/options.php:71
-#@ ecp
+msgid "Code"
+msgstr "Code"
+
+msgid "Codes"
+msgstr "Codes"
+
+msgid "Codes per Page"
+msgstr "Codes pro Seite"
+
+msgid "Configuration"
+msgstr "Konfiguration"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Edit"
+msgstr "Bearbeiten"
+
+msgid "Edit Code"
+msgstr "Code bearbeiten"
+
+msgid "Error"
+msgstr "Fehler"
+
+msgid "General"
+msgstr "Allgemein"
+
+msgid "Go to the first page"
+msgstr "Gehe zur ersten Seite"
+
+msgid "Home URL"
+msgstr "Home URL"
+
+msgid ""
+"If you want to thank the developer for this free Plugin, you are welcome to "
+"make a donation via PayPal (you don't need a PayPal account to make the "
+"donation)."
+msgstr ""
+"Wenn du dem Entwickler für dieses kostenlose Plugin danken möchtest, kannst "
+"du gerne bei PayPal eine Spende hinterlassen (es wird kein PayPal Account "
+"benötigt)."
+
+msgid "Instead of Whitesspaces use Underlines"
+msgstr "Anstelle von Leerzeichen sind Unterstriche zu benutzen"
+
+msgid "Left"
+msgstr "Links"
+
+msgid "Left Alignment - Click to change"
+msgstr "Linke Ausrichtung - Klicke um dies zu ändern"
+
+msgid "Modifying of the ID is not allowed"
+msgstr "Das verändern der ID ist nicht erlaubt"
+
+msgid "Modifying of the Status to something else than 1 or 2 is not allowed"
+msgstr "Das verändern des Status zu etwas anderem als 1 oder 2 ist nicht erlaubt"
+
+msgid "Modifying the Alignment to something else than 0, 1, 2 or 3 is not allowed"
+msgstr ""
+"Das verändern der Ausrichtung zu etwas anderem als 0, 1, 2 oder 3 ist nicht "
+"erlaubt"
+
+msgid "MySQL Version"
+msgstr "MySQL Version"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "New Code"
+msgstr "Code hinzufügen"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "No Alignment - Click to change"
+msgstr "Keine Ausrichtung - Klicke um dies zu ändern"
+
+msgid "No Code found - Click \"Add New Code\" to add one."
+msgstr "Kein Code gefunden - Klick auf \"Neuen Code hinzufügen\" um einen hinzuzufügen."
+
+msgid "None"
+msgstr "Keine"
+
+msgid "Offline"
+msgstr "Offline"
+
+msgid "Online"
+msgstr "Online"
+
+msgid "Only Letters and Numbers are allowed"
+msgstr "Nur Buchstaben und Zahlen sind erlaubt"
+
+msgid "PHP Version"
+msgstr "PHP Version"
+
+msgid "PHP max. execution time"
+msgstr "PHP max. Ausführungszeit"
+
+msgid "PHP memory limit"
+msgstr "PHP Speicherlimit"
+
+msgid "Paths"
+msgstr "Pfade"
+
+msgid "Plugin URL"
+msgstr "Plugin URL"
+
+msgid "Plugin Version (Database)"
+msgstr "Plugin Version (Datenbank)"
+
+msgid "Plugin Version (File)"
+msgstr "Plugin Version (Datei)"
+
+msgid "Right"
+msgstr "Rechts"
+
 msgid "Right Alignment - Click to change"
 msgstr "Rechte Ausrichtung - Klicke um dies zu ändern"
 
-#: inc/ecp_add.php:45
-#: inc/ecp_edit.php:58
-#@ ecp
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "Shortcode"
+msgstr "Shortcode"
+
+msgid "Site URL"
+msgstr "Seiten URL"
+
+msgid "Special Characters are not allowed in the Code Name"
+msgstr "Sonderzeichen sind im Code Namen nicht erlaubt"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Status is Offline - Click to change"
+msgstr "Status ist Offline - Klicke um dies zu ändern"
+
+msgid "Status is Online - Click to change"
+msgstr "Status ist Online - Klicke um dies zu ändern"
+
+msgid "System Information"
+msgstr "System Informationen"
+
 msgid "The Code Name already exist - It must be uniqe"
 msgstr "Der Name existiert bereits - Er muss einmalig sein"
 
+msgid "The Code Name and / or the Code must be filled in"
+msgstr "Der Code Name und / oder der Code müssen ausgefüllt werden"
+
+msgid "The Code must be filled in"
+msgstr "Es muss ein Code eingegeben werden"
+
+msgid "The Option \"Codes per Page\" must be filled in"
+msgstr "Die Option \"Codes pro Seite\" muss ausgefüllt werden"
+
+msgid "The Value for the Option \"Codes per Page\" must be numeric"
+msgstr "Die Wert der Option \"Codes pro Seite\" muss numerisch sein"
+
+msgid "Value"
+msgstr "Wert"
+
+msgid "WordPress Network Page"
+msgstr "WordPress Netzwerk Seite"
+
+msgid "WordPress Version"
+msgstr "WordPress Version"
+
+msgid "WordPress memory limit"
+msgstr "WordPress Speicherlimit"
+
+msgid "Yes"
+msgstr "Ja"
